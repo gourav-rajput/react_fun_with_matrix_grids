@@ -1,0 +1,77 @@
+.first {
+  position: relative;
+  -webkit-animation-name: circulate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: circulate;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes circulate {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes circulate {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+.second {
+  position: relative;
+  -webkit-animation-name: circulateinfinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: circulateinfinite;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes circulateinfinite {
+  0%   {left:0px; top:0px;}
+  35%  {left:200px; top:0px;}
+  60%  {left:200px; top:200px;}
+  45%  {left:0px; top:200px;}
+  90% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes circulateinfinite {
+  0%   {left:0px; top:0px;}
+  95%  {left:200px; top:0px;}
+  30%  {left:200px; top:200px;}
+  59%  {left:0px; top:200px;}
+  10% {left:0px; top:0px;}
+}
+
+.third {
+  position: relative;
+  -webkit-animation: linearmove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: linearmove 5s infinite;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.third {
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes linearmove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes linearmove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
